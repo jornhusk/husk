@@ -72,7 +72,11 @@
     font-family:'Unbounded';font-weight:800;font-size:18px;color:#fff;
     box-shadow:0 6px 20px rgba(255,106,0,.35);
   }
-  .topbar .name{font-family:'Unbounded';font-weight:700;font-size:15px;letter-spacing:.5px}
+  .topbar .name{
+    position:absolute;left:50%;transform:translateX(-50%);
+    font-family:'Unbounded';font-weight:700;font-size:16px;letter-spacing:.5px;
+    white-space:nowrap;
+  }
   .topbar .sub{color:var(--muted);font-size:12px;margin-top:2px}
   .badge-live{
     margin-left:auto;font-size:10.5px;font-weight:700;letter-spacing:1.5px;
@@ -270,9 +274,9 @@
     .wrap{padding:18px 12px 44px}
     .topbar{padding:13px 15px;border-radius:16px;margin-bottom:20px}
     .topbar .logo{width:36px;height:36px;font-size:14px}
-    .topbar .name{font-size:13px}
+    .topbar .name{font-size:11px;white-space:nowrap;letter-spacing:.2px}
     .topbar .sub{font-size:10.5px}
-    .badge-live{padding:6px 10px;font-size:9px;letter-spacing:1px}
+    .badge-live{padding:5px 9px;font-size:8.5px;letter-spacing:.8px}
     .hero{padding:24px 18px;border-radius:18px;margin-bottom:14px}
     .hero h1{font-size:21px}
     .hero p{font-size:14px}
@@ -328,7 +332,7 @@
 <div class="wrap">
 
   <header class="topbar glass">
-    <div class="name" style="position:absolute;left:50%;transform:translateX(-50%);font-size:16px">HUSK DE GOAT MANUAL</div>
+    <div class="name">HUSK DE GOAT MANUAL</div>
     <div class="badge-live">Scouting</div>
   </header>
 
