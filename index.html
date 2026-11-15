@@ -61,6 +61,7 @@
 
   /* ── шапка ── */
   .topbar{
+    position:relative;
     display:flex;align-items:center;gap:14px;
     border-radius:20px;padding:15px 18px;margin-bottom:28px;
   }
@@ -219,6 +220,7 @@
   .final{
     border-radius:24px;padding:32px 30px;
     text-align:center;color:#fff;position:relative;overflow:hidden;margin-top:26px;
+    background:rgba(20,15,12,.88);
   }
   .final::before{
     content:"";position:absolute;left:50%;top:-120px;transform:translateX(-50%);
@@ -326,12 +328,8 @@
 <div class="wrap">
 
   <header class="topbar glass">
-    <div class="logo">HD</div>
-    <div>
-      <div class="name">HUSK DE GOAT</div>
-      <div class="sub">мануал скаута</div>
-    </div>
-    <div class="badge-live">Scout Manual</div>
+    <div class="name" style="position:absolute;left:50%;transform:translateX(-50%);font-size:16px">HUSK DE GOAT MANUAL</div>
+    <div class="badge-live">Scouting</div>
   </header>
 
   <div class="hero glass">
@@ -443,11 +441,11 @@
 
   <div class="final glass">
     <div class="kicker">Твой тимлид</div>
-    <div class="avatar">JH</div>
+    <div class="avatar"><svg viewBox="0 0 24 24" width="32" height="32" fill="#fff" aria-hidden="true"><path d="M9.04 15.31l-.37 4.34c.53 0 .76-.23 1.04-.5l2.5-2.39 5.18 3.79c.95.52 1.63.25 1.88-.88l3.4-15.95c.31-1.42-.51-1.98-1.45-1.63L1.4 10.66c-1.39.54-1.37 1.32-.24 1.67l5.1 1.59L19.5 6.53c.56-.34 1.07-.15.65.19L9.04 15.31z"/></svg></div>
     <h3>Вопросы и вход в команду</h3>
     <span class="nick">@jornhusk</span>
     <p>Пиши напрямую: выдача скриптов, обучение, первые задачи</p>
-    <a class="tg" href="https://t.me/jornhusk" target="_blank">✈ Написать в Telegram</a>
+    <a class="tg" href="https://t.me/jornhusk" target="_blank">Написать в Telegram</a>
   </div>
 
   <footer>
